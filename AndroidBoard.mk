@@ -6,7 +6,7 @@
 
 # include the non-open-source counterpart to this file
 
-#-include vendor/jiayu/G2L/AndroidBoardVendor.mk
-ifeq ($(TARGET_BOOTLOADER_BOARD_NAME),G2L)
+#-include vendor/jiayu/G3/AndroidBoardVendor.mk
+ifeq ($(TARGET_BOOTLOADER_BOARD_NAME),G3)
 include $(all-subdir-makefiles)
 endif

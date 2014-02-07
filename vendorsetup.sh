@@ -14,5 +14,5 @@
 # limitations under the License.
 #
 
-add_lunch_combo G2L-eng
-add_lunch_combo G2L-userdebug
+add_lunch_combo G3L-eng
+add_lunch_combo G3L-userdebug
