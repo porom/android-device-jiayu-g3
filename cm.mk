@@ -7,8 +7,8 @@ PRODUCT_RELEASE_NAME := G3
 ## Device identifier. This must come after all inclusions
 
 
-TARGET_SCREEN_HEIGHT := 800
-TARGET_SCREEN_WIDTH := 480
+TARGET_SCREEN_HEIGHT := 1280
+TARGET_SCREEN_WIDTH := 720
 
 $(call inherit-product, device/jiayu/G3/G3.mk)
 

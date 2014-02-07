@@ -15,9 +15,22 @@ ifneq ($(TARGET_PREBUILT_KERNEL),)
 endif
 
 PRODUCT_COPY_FILES += \
-    device/jiayu/G3/prebuilt/root/init.G3.rc:root/init.G3.rc \
-    device/jiayu/G3/prebuilt/root/init.G3.usb.rc:root/init.G3.usb.rc \
-    device/jiayu/G3/prebuilt/root/ueventd.G3.rc:root/ueventd.rc \
+    device/jiayu/G3/prebuilt/root/init.rc:root/init.rc \
+    device/jiayu/G3/prebuilt/root/init.usb.rc:root/init.usb.rc \
+    device/jiayu/G3/prebuilt/root/advanced_meta_init.project.rc:root/advanced_meta_init.project.rc \
+    device/jiayu/G3/prebuilt/root/advanced_meta_init.rc:root/advanced_meta_init.rc \
+    device/jiayu/G3/prebuilt/root/factory_init.rc:root/factory_init.rc \
+    device/jiayu/G3/prebuilt/root/init.aee.customer.usb.rc:root/init.aee.customer.usb.rc \
+    device/jiayu/G3/prebuilt/root/init.goldfish.rc:root/init.goldfish.rc \
+    device/jiayu/G3/prebuilt/root/init.no_ssd.usb.rc:root/init.no_ssd.rc \
+    device/jiayu/G3/prebuilt/root/init.project.rc:root/init.project.rc \
+    device/jiayu/G3/prebuilt/root/init.trace.usb.rc:root/init.trace.usb.rc \
+    device/jiayu/G3/prebuilt/root/init.xlog.rc:root/init.xlog.rc \
+    device/jiayu/G3/prebuilt/root/meta_init.project.rc:root/meta_init.project.rc \
+    device/jiayu/G3/prebuilt/root/meta_init.rc:root/meta_init.rc \
+    device/jiayu/G3/prebuilt/root/ueventd.goldfish.rc:root/ueventd.goldfish.rc \
+    device/jiayu/G3/prebuilt/root/ueventd.rc:root/ueventd.rc \
+
 
 $(call inherit-product, build/target/product/full.mk)
 

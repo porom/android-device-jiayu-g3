@@ -1,22 +1,22 @@
 USE_CAMERA_STUB := true
 
 # inherit from the proprietary version
-#-include vendor/Jiayu/G2L/BoardConfigVendor.mk
+#-include vendor/Jiayu/G3/BoardConfigVendor.mk
 
 TARGET_NO_BOOTLOADER := true
 TARGET_BOARD_PLATFORM := mt657x
 TARGET_CPU_ABI := armeabi
 TARGET_ARCH_VARIANT := armv7-a-neon
 TARGET_ARCH_VARIANT_CPU := cortex-a9
-TARGET_BOOTLOADER_BOARD_NAME := G3L
+TARGET_BOOTLOADER_BOARD_NAME := G3
 
 #kernel
 BOARD_KERNEL_CMDLINE := 
-BOARD_KERNEL_BASE := 0x10000000
+BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_PAGESIZE := 2048
-#TARGET_SPECIFIC_HEADER_PATH := device/jiayu/G3L/include
-#TARGET_PREBUILT_RECOVERY_KERNEL := device/jiayu/G3L/kernel_recovery
-#TARGET_KERNEL_CONFIG := cm_G2L_slim_defconfig
+#TARGET_SPECIFIC_HEADER_PATH := device/jiayu/G3/include
+#TARGET_PREBUILT_RECOVERY_KERNEL := device/jiayu/G3/kernel_recovery
+#TARGET_KERNEL_CONFIG := cm_G3_slim_defconfig
 
 # fix this up by examining /proc/mtd on a running device
 BOARD_BOOTIMAGE_PARTITION_SIZE := 0x00600000
@@ -25,7 +25,7 @@ BOARD_SYSTEMIMAGE_PARTITION_SIZE := 0x20100000
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 0xa2800000
 BOARD_FLASH_BLOCK_SIZE := 131072
 
-TARGET_PREBUILT_KERNEL := device/jiayu/G2L/kernel
+TARGET_PREBUILT_KERNEL := device/jiayu/G3/kernel
 TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/devices/platform/mt_usb/gadget/lun%d/file
 
 
@@ -34,13 +34,13 @@ BOARD_HAS_NO_SELECT_BUTTON := true
 #BOARD_HAS_LARGE_FILESYSTEM := true
 
 # Internal storage
-#BOARD_HAS_SDCARD_INTERNAL := true
-#BOARD_SDCARD_DEVICE_PRIMARY := /dev/block/mmcblk0p1
-#BOARD_SDCARD_DEVICE_SECONDARY := /dev/block/mmcblk1k1
+BOARD_HAS_SDCARD_INTERNAL := true
+BOARD_SDCARD_DEVICE_PRIMARY := /dev/block/mmcblk0p5
+BOARD_SDCARD_DEVICE_SECONDARY := /dev/block/mmcblk1p1
 #BOARD_SDEXT_DEVICE := /dev/block/mmcblk0p2
 
 #twrp
-DEVICE_RESOLUTION := 480x800
+DEVICE_RESOLUTION := 720x1280
 RECOVERY_GRAPHICS_USE_LINELENGTH := true
 #TW_NO_USB_STORAGE := true
 TW_FLASH_FROM_STORAGE := true

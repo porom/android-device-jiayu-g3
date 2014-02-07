@@ -1,3 +1,15 @@
+## Changelog #2
+ - Checked and changed:
+   + AndroidBoard.mk
+   + AndroidProducts.mk
+   + cm.mk
+   + G3.mk
+   + vendorsetup.sh
+   + recovery.fstab
+   + system.prop
+ - To-Do:
+   + Re-check BoardConfig.mk
+
 ## Changelog #1
  - Removed G2L.mk
  - Changed kernel to vredniiy
