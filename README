@@ -1,3 +1,6 @@
+## Changelog #5
+ - Changed name from G3.mk to full_g3.mk
+
 ## Changelog #4
  - Changed BOARD_KERNEL_BASE from BoardConfig.mk
 
