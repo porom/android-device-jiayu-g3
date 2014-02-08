@@ -1,3 +1,6 @@
+## Changelog #4
+ - Changed BOARD_KERNEL_BASE from BoardConfig.mk
+
 ## Changelog #3
  - Checked and changed: BoardConfig.mk
  - Everything ready
